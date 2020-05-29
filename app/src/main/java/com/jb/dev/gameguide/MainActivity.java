@@ -12,10 +12,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
-import com.google.android.gms.ads.NativeExpressAdView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    NativeExpressAdView mAdView;
     private String TAG = "MainActivity";
     Button buttonWin, buttonShare, buttonRate;
     InterstitialAd mInterstitialAd;
@@ -29,14 +27,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonRate = findViewById(R.id.btn_rate);
         buttonShare = findViewById(R.id.btn_share);
         buttonWin = findViewById(R.id.btn_win);
-        mAdView = findViewById(R.id.adView);
         mAdBannerTop = findViewById(R.id.mainBannerTop);
         mAdBanner = findViewById(R.id.mainBanner);
         buttonWin.setOnClickListener(this);
         buttonRate.setOnClickListener(this);
         buttonShare.setOnClickListener(this);
         mInterstitialAd = new InterstitialAd(this);
-        //        mAdView.loadAd(new AdRequest.Builder().build());
         AdHelper.prepareInterstitial(mInterstitialAd);
         AdHelper.prepareBanner(mAdBanner, this);
         AdHelper.prepareBanner(mAdBannerTop, this);

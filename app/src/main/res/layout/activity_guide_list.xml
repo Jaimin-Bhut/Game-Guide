@@ -79,42 +79,24 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@+id/native_main_container_setc"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
                     android:orientation="vertical">
 
-                    <com.google.android.gms.ads.NativeExpressAdView
-                        android:id="@+id/adView"
+                    <com.google.android.gms.ads.AdView
+                        android:id="@+id/GuideListBannerTop"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        ads:adSize="300x220"
-                        ads:adUnitId="ca-app-pub-3940256099942544/2247696110" />
-
-                    <androidx.core.widget.NestedScrollView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-                        <LinearLayout
-                            android:id="@+id/native_main_container_setc"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:gravity="center"
-                            android:orientation="vertical" >
-                            <com.google.android.gms.ads.AdView
-                                android:id="@+id/GuideListBannerTop"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                ads:adSize="BANNER"
-                                android:visibility="invisible"
-                                ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
-                        </LinearLayout>
-
-                    </androidx.core.widget.NestedScrollView>
+                        android:visibility="invisible"
+                        ads:adSize="BANNER"
+                        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -277,8 +259,8 @@
                     android:id="@+id/GuideListBanner"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    ads:adSize="BANNER"
                     android:visibility="invisible"
+                    ads:adSize="BANNER"
                     ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
             </LinearLayout>
 

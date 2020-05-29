@@ -16,13 +16,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <com.google.android.gms.ads.NativeExpressAdView
-                android:id="@+id/adView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                ads:adSize="300x220"
-                ads:adUnitId="ca-app-pub-3940256099942544/2247696110" />
-
             <com.google.android.gms.ads.AdView
                 android:id="@+id/mainBannerTop"
                 android:layout_width="match_parent"
