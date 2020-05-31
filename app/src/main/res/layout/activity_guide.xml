@@ -22,16 +22,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="bottom|center_vertical|center_horizontal|center"
-                android:gravity="bottom|center_vertical|center_horizontal|center"
-                android:visibility="invisible">
+                android:gravity="bottom|center_vertical|center_horizontal|center">
 
                 <com.google.android.gms.ads.AdView
                     android:id="@+id/GuideBannerTop"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="bottom"
+                    android:visibility="invisible"
                     ads:adSize="BANNER"
-                    ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+                    ads:adUnitId="@string/banner" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
@@ -82,15 +82,8 @@
                     android:id="@+id/startappbannerlayout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:visibility="invisible">
+                    android:gravity="center">
 
-                    <com.google.android.gms.ads.AdView
-                        android:id="@+id/GuideBannerMiddle"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        ads:adSize="BANNER"
-                        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -115,7 +108,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        ads:adSize="BANNER"
         android:visibility="invisible"
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner" />
 </LinearLayout>

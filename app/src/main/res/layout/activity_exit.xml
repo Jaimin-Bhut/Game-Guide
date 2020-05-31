@@ -29,7 +29,7 @@
                     android:layout_gravity="bottom"
                     android:visibility="invisible"
                     ads:adSize="BANNER"
-                    ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+                    ads:adUnitId="@string/banner" />
             </LinearLayout>
 
             <androidx.core.widget.NestedScrollView
@@ -155,7 +155,7 @@
             android:layout_gravity="bottom"
             android:visibility="invisible"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+            ads:adUnitId="@string/banner" />
 
     </LinearLayout>
 </LinearLayout>

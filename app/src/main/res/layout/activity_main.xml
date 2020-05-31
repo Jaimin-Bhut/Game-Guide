@@ -23,7 +23,7 @@
                 android:layout_gravity="bottom"
                 ads:adSize="BANNER"
                 android:visibility="invisible"
-                ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+                ads:adUnitId="@string/banner" />
         </LinearLayout>
     </LinearLayout>
 
@@ -129,5 +129,5 @@
         android:layout_gravity="bottom"
         ads:adSize="BANNER"
         android:visibility="invisible"
-        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+        ads:adUnitId="@string/banner" />
 </LinearLayout>

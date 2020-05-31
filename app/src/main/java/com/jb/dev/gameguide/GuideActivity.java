@@ -1,11 +1,11 @@
 package com.jb.dev.gameguide;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
@@ -13,7 +13,8 @@ import com.google.android.gms.ads.InterstitialAd;
 public class GuideActivity extends AppCompatActivity {
     Button buttonGuide;
     InterstitialAd interstitialAd;
-    AdView adViewTop, adViewBottom, adViewMiddle;
+    AdView adViewTop;
+    AdView adViewBottom;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,6 @@ public class GuideActivity extends AppCompatActivity {
         setContentView(R.layout.activity_guide);
 
         adViewBottom = findViewById(R.id.GuideBanner);
-        adViewMiddle = findViewById(R.id.GuideBannerMiddle);
         adViewTop = findViewById(R.id.GuideBannerTop);
         interstitialAd = new InterstitialAd(this);
         buttonGuide = findViewById(R.id.btn_guide);
@@ -34,7 +34,6 @@ public class GuideActivity extends AppCompatActivity {
         });
 
         AdHelper.prepareBanner(adViewBottom, this);
-        AdHelper.prepareBanner(adViewMiddle, this);
         AdHelper.prepareBanner(adViewTop, this);
     }
 }

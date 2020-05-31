@@ -11,7 +11,7 @@ import com.google.android.gms.ads.InterstitialAd;
 class AdHelper {
 
     static void prepareInterstitial(final InterstitialAd mInterstitialAd) {
-        mInterstitialAd.setAdUnitId("ca-app-pub-3940256099942544/8691691433");
+        mInterstitialAd.setAdUnitId(String.valueOf(R.string.interstitial));
         mInterstitialAd.loadAd(new AdRequest.Builder().build());
         mInterstitialAd.setAdListener(new AdListener() {
             @Override
